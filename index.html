@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body class="m-4">
+    <div class="container p-4 bg-primary-gray d-flex flex-column gap-4">
+      <!-- Breadcrumbs -->
+      <div class="d-flex align-items-center gap-1">
+        <h2>Ekran 1</h2>
+        <div class="line mx-3"></div>
+        <i data-feather="home" class="icon text-primary"></i>
+        <i data-feather="chevron-right" class="icon text-sec-grey"></i>
+        <p class="text-primary m-0 breadcrumb-text">Start</p>
+        <i data-feather="chevron-right" class="icon text-sec-grey"></i>
+        <p class="text-sec-gray m-0 breadcrumb-text">Ekran nr1</p>
+      </div>
+
+      <!-- Basic Info-->
+      <div class="container inner-box p-4">
+        <h4>Informacje podstawowe</h4>
+
+        <form>
+          <div class="row">
+            <div class="col-sm-4 col-12 mb-6">
+              <label for="text1" class="label">Tekst</label>
+              <input
+                type="text"
+                class="form-control text-sec-gray"
+                id="text1"
+                aria-describedby="text1"
+                placeholder="Placeholder"
+              />
+            </div>
+            <div class="col-sm-4 col-12 mb-6">
+              <label for="tekst2" class="label">Tekst</label>
+              <input
+                type="text"
+                class="form-control text-sec-gray"
+                id="text2"
+                aria-describedby="text1"
+                placeholder="Placeholder"
+              />
+            </div>
+            <div class="col-sm-4 col-12 dropdown-center mb-6">
+              <label for="dropdown1" class="label">Dropdown</label>
+
+              <button
+                class="dropdown-toggle form-control"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                id="dropdow1"
+              ></button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action two</a></li>
+                <li><a class="dropdown-item" href="#">Action three</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-12 dropdown-center mb-6">
+              <label for="dropdown2" class="label">Dropdown</label>
+
+              <button
+                class="dropdown-toggle form-control"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                id="dropdown2"
+              ></button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action two</a></li>
+                <li><a class="dropdown-item" href="#">Action three</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-8 col-12 mb-6">
+              <label for="description" class="label">Opis</label>
+              <input
+                type="text"
+                class="form-control text-sec-gray bg-third-gray"
+                id="description"
+                aria-describedby="text1"
+                placeholder="Placeholder"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!--Detailed Info-->
+      <div class="inner-box gap-4">
+        <h4>Informacje szczegółowe</h4>
+        <div
+          class="d-flex gap-4 align-items-center justify-content-sm-start position-relative"
+        >
+          <button
+            type="button"
+            class="btn btn-primary nav-text"
+            data-bs-toggle="modal"
+            data-bs-target="#importModal"
+          >
+            Importuj
+          </button>
+          <div class="hamburger m-auto">
+            <div class="sub-nav">
+              <div class="d-flex gap-2 align-items-center">
+                <i data-feather="refresh-ccw" class="icon text-primary"></i>
+                <p class="nav-text">Aktualizuj</p>
+              </div>
+              <div class="d-flex gap-2 align-items-center">
+                <i data-feather="refresh-ccw" class="icon text-primary"></i>
+                <p class="nav-text">Kopiuj</p>
+              </div>
+              <div class="d-flex gap-2 align-items-center">
+                <i data-feather="refresh-ccw" class="icon text-primary"></i>
+                <p class="nav-text">Wyczyść</p>
+              </div>
+            </div>
+            <span></span><span></span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4 mb-6">
+            <label for="text1" class="label">Tekst</label>
+            <input
+              type="text"
+              class="form-control text-sec-gray"
+              id="text1"
+              aria-describedby="text1"
+              placeholder="Placeholder"
+            />
+          </div>
+          <div class="col-sm-4 mb-6">
+            <label for="text1" class="label">Tekst</label>
+            <input
+              type="text"
+              class="form-control text-sec-gray"
+              id="text1"
+              aria-describedby="text1"
+              placeholder="Placeholder"
+            />
+          </div>
+          <div class="col-sm-4 mb-6">
+            <label for="text1" class="label">Tekst</label>
+            <input
+              type="text"
+              class="form-control text-sec-gray"
+              id="text1"
+              aria-describedby="text1"
+              placeholder="Placeholder"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 mb-6">
+            <label for="text1" class="label">Tekst</label>
+            <input
+              type="text"
+              class="form-control text-sec-gray"
+              id="text1"
+              aria-describedby="text1"
+              placeholder="Placeholder"
+            />
+          </div>
+          <div class="col-sm-4 mb-6">
+            <label for="text1" class="label">Tekst</label>
+            <input
+              type="text"
+              class="form-control text-sec-gray"
+              id="text1"
+              aria-describedby="text1"
+              placeholder="Placeholder"
+            />
+          </div>
+          <div class="col-sm-4 mb-6">
+            <label for="text1" class="label">Tekst</label>
+            <input
+              type="text"
+              class="form-control text-sec-gray"
+              id="text1"
+              aria-describedby="text1"
+              placeholder="Placeholder"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 mb-6">
+            <label for="text1" class="label">Tekst</label>
+            <input
+              type="text"
+              class="form-control text-sec-gray"
+              id="text1"
+              aria-describedby="text1"
+              placeholder="Placeholder"
+            />
+          </div>
+          <div class="col-sm-4 mb-6">
+            <label for="text1" class="label">Tekst</label>
+            <input
+              type="text"
+              class="form-control text-sec-gray"
+              id="text1"
+              aria-describedby="text1"
+              placeholder="Placeholder"
+            />
+          </div>
+        </div>
+
+        <!--Radio Switches-->
+        <div class="d-flex flex-column gap-4">
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Switcht 1</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Switcht 2</label
+            >
+          </div>
+          <div class="form-check form-switch">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="flexSwitchCheckDefault"
+            />
+            <label class="form-check-label" for="flexSwitchCheckDefault"
+              >Switcht 3</label
+            >
+          </div>
+        </div>
+        <!--Last input -->
+
+        <div class="row">
+          <div class="col-sm-4 mb-6">
+            <label for="text1" class="label"
+              >Data sprzedaży zgłoszona na PWI</label
+            >
+            <input
+              type="text"
+              class="form-control text-sec-gray"
+              id="text1"
+              aria-describedby="text1"
+              placeholder="Placeholder"
+            />
+          </div>
+        </div>
+
+        <!-- Table-->
+        <div>
+          <h4 class="pb-4">Lista</h4>
+          <table class="table">
+            <thead class="thead-text">
+              <tr class="table-headers bg-primary-gray">
+                <th scope="col">ID</th>
+                <th scope="col" class="d-none d-md-table-cell">KLIENT</th>
+                <th scope="col" class="d-none d-md-table-cell">DATA OD</th>
+                <th scope="col" class="d-none d-md-table-cell">DATA DO</th>
+                <th scope="col" class="d-none d-md-table-cell">UZYTKOWNIK</th>
+                <th scope="col" class="d-none d-md-table-cell">ETAP</th>
+                <th scope="col" class="d-none d-md-table-cell">POSTĘP</th>
+                <th scope="col" class="d-none d-md-table-cell">BŁAD</th>
+                <th scope="col" class="d-none d-md-table-cell"></th>
+              </tr>
+            </thead>
+            <tbody id="t-body" class="tbody-text">
+              <!-- Dynamic -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <button disabled class="btn btn-primary" type="submit">
+          <i data-feather="chevron-left" class="icon"></i>
+          Wstecz
+        </button>
+
+        <button class="btn btn-primary" type="submit">
+          Dalej <i data-feather="chevron-right" class="icon text-white"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="importModal"
+      tabindex="-1"
+      aria-labelledby="importModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content pt-7 px-6 pb-6">
+          <div class="modal-header d-flex justify-content-center">
+            <h1 id="importModalLabel">Importuj</h1>
+            <div class="div-x-icon">
+              <i data-feather="x" class="icon x-icon"></i>
+            </div>
+          </div>
+          <div class="modal-body">
+            <h4 class="mb-2">Lista klientów</h4>
+            <table class="table">
+              <thead class="thead-text">
+                <tr class="table-headers bg-primary-gray">
+                  <th scope="col">ID</th>
+                  <th scope="col">Nagłówek nr 2</th>
+                  <th scope="col">Nagłówek nr 3</th>
+                  <th scope="col">
+                    <i
+                      data-feather="settings"
+                      class="icon text-primary x-icon"
+                    ></i>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="t-body-modal" class="tbody-text">
+                <tr>
+                  <td>Wybierz</td>
+                  <td>Klient nr 1</td>
+                  <td>Jan Kowalski</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Wybierz</td>
+                  <td>Klient nr 1</td>
+                  <td>Jan Kowalski</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Wybierz</td>
+                  <td>Klient nr 1</td>
+                  <td>Jan Kowalski</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button type="button" class="btn btn-primary align-self-end">
+            Zamknij
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
