@@ -102,7 +102,7 @@ const rows = clients.map((el) => {
   const iconElement = document.createElement("i");
   downloadCell.classList.add("text-primary", "gap-2");
   iconElement.setAttribute("data-feather", "download");
-  iconElement.classList.add("icon", "text-primary");
+  iconElement.classList.add("icon", "text-primary", "mb-1");
   downloadCell.appendChild(iconElement);
   downloadCell.appendChild(document.createTextNode(" Pobierz"));
   row.appendChild(downloadCell);
