@@ -82,7 +82,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 //custom bootstrap
-//according to figma 5 | 10 | 15 | 20 
+//according to figma 5 | 10 | 15 | 20
 .mx-1 {
   margin: 0 5px;
 }
@@ -254,6 +254,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
   height: 34px;
   background: #ffffff;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .modal-dialog {
@@ -286,6 +287,7 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
     height: 10px;
     justify-content: center;
     position: relative;
+    margin: auto;
     span {
       background-color: #394348;
       display: block;

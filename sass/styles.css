@@ -11310,6 +11310,7 @@ textarea.form-control-lg {
   height: 34px;
   background: #ffffff;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .modal-dialog {
@@ -11343,6 +11344,7 @@ textarea.form-control-lg {
     height: 10px;
     justify-content: center;
     position: relative;
+    margin: auto;
   }
   .hamburger span {
     background-color: #394348;
